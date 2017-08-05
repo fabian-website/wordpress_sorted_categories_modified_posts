@@ -26,7 +26,7 @@ This will display all category names sorted by its modified posts.
 
 ###### Hint:
 
-In line 23 of the code.php you also display all categories which doesn't have posts. If you don't want to display them, just remove this part:
+In line 35 of the code.php you also display all categories which doesn't have posts. If you don't want to display them, just remove this part:
 
 ```
 //Get all empty categories
