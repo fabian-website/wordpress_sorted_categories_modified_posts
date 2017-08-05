@@ -16,7 +16,19 @@ function netthemes_sorted_categories() {
         while ( $modified_query->have_posts() ) {
             $modified_query->the_post();
             $cat = get_the_category()[0];
-            array_push($catarr, $cat);
+            $cat_id = $cat->term_id;
+            $cat_exist = false;
+
+            $categories = $catarr;
+            foreach ( $categories as $category ) {
+                if($category->term_id == $cat_id) {
+                    $cat_exist = true;
+                }
+            }
+            
+            if(!$cat_exist) {
+                array_push($catarr, $cat);
+            }
         }
     }
 
@@ -37,5 +49,5 @@ function netthemes_sorted_categories() {
 
     return $catarr;
 
-} 
+}
 ?>
