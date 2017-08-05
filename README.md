@@ -4,7 +4,7 @@ So, I had a project in WordPress where I have to display all categories of the p
 
 For example:
  Category A consists of one post created yesterday; 
- Category B conststs of one post created today
+ Category B consists of one post created today
  
  In this case B is before A. But if I edit the post of A, category A will be before B.
  
