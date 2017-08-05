@@ -1,4 +1,4 @@
-function netthemes_sorted_categories() {
+<?php function netthemes_sorted_categories() {
     $catarr = array();
 
     //Get categories of all modified posts
@@ -36,4 +36,4 @@ function netthemes_sorted_categories() {
 
     return $catarr;
 
-}
+} ?>
